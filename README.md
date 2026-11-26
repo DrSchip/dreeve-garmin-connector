@@ -4,6 +4,20 @@
 
 <h1 align="center">Dreeve Garmin Connector</h1>
 
+> **Personal Garmin weight fork:** the `garmin-weight` branch also synchronizes
+> weigh-ins during the activity cycle. It requires the matching
+> [Dreeve fork](https://github.com/DrSchip/dreeve/tree/garmin-weight).
+> The upstream connector image linked below does not include weight synchronization.
+
+### Maintaining this fork
+
+`master` mirrors [the upstream connector](https://github.com/dreeveapp/dreeve-garmin-connector).
+Keep the integration on `garmin-weight` and merge future upstream updates into
+that branch, retaining the original contribution branch for reference. Run the
+upstream lockfile, lint, format, type and test checks on Python 3.12 and 3.13,
+then validate updated app and connector images together in development before
+updating an existing installation.
+
 <p align="center">
 <a href="https://raw.githubusercontent.com/dreeveapp/dreeve-garmin-connector/refs/heads/master/LICENSE"><img src="https://img.shields.io/github/license/dreeveapp/dreeve-garmin-connector?color=428f7e&logo=open%20source%20initiative&logoColor=white" alt="License"></a>
 <a href="https://github.com/dreeveapp/dreeve-garmin-connector/pkgs/container/dreeve-garmin-connector"><img src="https://img.shields.io/github/v/tag/dreeveapp/dreeve-garmin-connector?sort=semver&logo=docker&logoColor=white&label=image" alt="Image version"></a>
